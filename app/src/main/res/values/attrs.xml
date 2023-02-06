@@ -1,0 +1,12 @@
+<resources>
+
+    <declare-styleable name="FieldView">
+        <attr name="fieldId" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CornerView">
+
+
+    </declare-styleable>
+
+</resources>

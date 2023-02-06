@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimulationFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topLayout"
+        android:layout_width="390sp"
+        android:layout_height="390sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="10sp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="350sp"
+            android:layout_height="350sp"
+            android:background="@drawable/board"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal" />
+
+
+        <LinearLayout
+            android:id="@+id/gore"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/centar">
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field20"
+                android:layout_width="47.5sp"
+                android:layout_height="65sp"
+                app:fieldId="20"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field21"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="0.5sp"
+                app:fieldId="21"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field22"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="22"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field23"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="23"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field24"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="1sp"
+                app:fieldId="24"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field25"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="25"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field26"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="26"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field27"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="1sp"
+                app:fieldId="27"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field28"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="28"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field29"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="1sp"
+                app:fieldId="29"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field30"
+                android:layout_width="48sp"
+                android:layout_height="65sp"
+                app:fieldId="30"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dole"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/centar"
+            android:orientation="horizontal">
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field10"
+                android:layout_width="47.5sp"
+                android:layout_height="65sp"
+                app:fieldId="10"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field9"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="0.5sp"
+                app:fieldId="9"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field8"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="8"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field7"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="7"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field6"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="1sp"
+                app:fieldId="6"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field5"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="5"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field4"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="4"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field3"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                android:layout_marginLeft="1sp"
+                app:fieldId="3"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field2"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="2"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field1"
+                android:layout_width="28sp"
+                android:layout_height="65sp"
+                app:fieldId="1"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field0"
+                android:layout_width="48sp"
+                android:layout_height="65sp"
+                app:fieldId="0"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/levo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/centar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field19"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="19"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field18"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="18"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field17"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="17"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field16"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="16"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field15"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="15"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field14"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="14"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field13"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="13"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field12"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="12"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field11"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="11"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/desno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/centar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field31"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="31"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field32"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="32"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field33"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="33"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field34"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="34"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field35"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="35"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field36"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="36"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field37"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="37"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field38"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="38"
+                />
+
+            <com.example.monopoly.views.FieldView
+                android:id="@+id/field39"
+                android:layout_width="65sp"
+                android:layout_height="28sp"
+                app:fieldId="39"
+                />
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/centar"
+            android:layout_width="255sp"
+            android:layout_height="255sp"
+            app:layout_constraintTop_toBottomOf="@id/gore"
+            app:layout_constraintBottom_toTopOf="@id/dole"
+            app:layout_constraintLeft_toRightOf="@id/levo"
+            app:layout_constraintRight_toLeftOf="@id/desno"
+
+            android:orientation="horizontal" >
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/cardImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/diceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView
+                    android:id="@+id/dice1"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/dice2"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginRight="20sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="320sp"
+        android:layout_height="340sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/topLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/endTurnRollDiceButton"
+            android:layout_width="150sp"
+            android:layout_height="65sp"
+            android:text="End Turn"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/roundedbutton"
+            />
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_marginBottom="20sp"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toTopOf="@+id/endTurnRollDiceButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/playerLabel"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/person24" />
+
+
+            <TextView
+                android:id="@+id/playerNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textSize="18sp"
+                android:layout_marginLeft="10sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/playerLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/currency24" />
+
+
+            <TextView
+                android:id="@+id/moneyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_marginLeft="10sp"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="$"
+                android:layout_marginLeft="5sp"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

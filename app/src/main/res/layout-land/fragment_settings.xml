@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingsFragment"
+    android:background="@drawable/background_landscape"
+    >
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Dice shake intensity"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/darkGray"
+        />
+
+    <Spinner
+        android:layout_marginTop="30dp"
+        android:id="@+id/spinner"
+        android:padding="15sp"
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:listitem="@android:layout/simple_dropdown_item_1line"
+        android:spinnerMode="dropdown"
+        android:layout_weight="1"
+        android:background="@drawable/shape_drop_down_normal"
+        android:gravity="center_vertical"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

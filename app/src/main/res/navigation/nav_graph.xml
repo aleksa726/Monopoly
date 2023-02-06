@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.monopoly.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_gameConfigureFragment"
+            app:destination="@id/gameConfigureFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_matchHistoryFragment"
+            app:destination="@id/matchHistoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameConfigureFragment"
+        android:name="com.example.monopoly.GameConfigureFragment"
+        android:label="fragment_game_configure"
+        tools:layout="@layout/fragment_game_configure" >
+        <action
+            android:id="@+id/action_gameConfigureFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.monopoly.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_winnerFragment"
+            app:destination="@id/winnerFragment" />
+        <argument
+            android:name="player1"
+            app:argType="string" />
+        <argument
+            android:name="player2"
+            app:argType="string" />
+        <argument
+            android:name="player3"
+            app:argType="string" />
+        <argument
+            android:name="player4"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_gameFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.monopoly.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_pop"
+            app:popUpTo="@id/settingsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/winnerFragment"
+        android:name="com.example.monopoly.WinnerFragment"
+        android:label="fragment_winner"
+        tools:layout="@layout/fragment_winner" >
+        <action
+            android:id="@+id/action_winnerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="playerName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchHistoryFragment"
+        android:name="com.example.monopoly.MatchHistoryFragment"
+        android:label="fragment_match_history"
+        tools:layout="@layout/fragment_match_history" >
+        <action
+            android:id="@+id/action_matchHistoryFragment_to_simulationFragment"
+            app:destination="@id/simulationFragment" />
+        <action
+            android:id="@+id/action_matchHistoryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/simulationFragment"
+        android:name="com.example.monopoly.SimulationFragment"
+        android:label="fragment_simulation"
+        tools:layout="@layout/fragment_simulation" >
+        <argument
+            android:name="index"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_simulationFragment_to_matchHistoryFragment"
+            app:destination="@id/matchHistoryFragment" />
+    </fragment>
+</navigation>
